@@ -1,4 +1,5 @@
+(push "~/projects/raytest/raylib/" asdf:*central-registry*)
 (push "~/projects/raytest/" asdf:*central-registry*)
-(asdf:load-system "raytest")
+(asdf:load-system "game")
 
-(raytest::main)
+(game::main)

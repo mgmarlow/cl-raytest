@@ -1,4 +1,4 @@
-(in-package :raytest)
+(in-package :raylib)
 
 (define-foreign-library raylib
   (:darwin "libraylib.dylib")
@@ -49,8 +49,3 @@
 (defparameter +lime+ '(r 0 g 158 b 47 a 255))
 (defparameter +yellow+ '(r 253 g 249 b 0 a 255))
 (defparameter +purple+ '(r 200 g 122 b 255 a 255))
-
-(defmacro with-drawing (&body body)
-  `(progn (begin-drawing)
-          (unwind-protect (progn ,@body))
-          (end-drawing)))

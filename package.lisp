@@ -1,2 +1,2 @@
-(defpackage :raytest
-  (:use :common-lisp :cffi))
+(defpackage :game
+  (:use :common-lisp :raylib))
