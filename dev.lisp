@@ -1,2 +1,4 @@
-(asdf:load-system "game")
+(require :asdf)
+(load "~/quicklisp/setup.lisp")
+(ql:quickload "game")
 (game::main)
